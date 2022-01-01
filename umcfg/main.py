@@ -46,7 +46,7 @@ class Application(Gtk.Application):
     def do_activate(self):
         win = self.props.active_window
         if not win:
-            win = UltramarineSettingsWindow(application=self)
+            win = UltramarineSettingsWindow(application=self).window
         win.present()
     
 

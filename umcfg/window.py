@@ -31,8 +31,8 @@ import configparser
 import os
 
 class UltramarineSettingsWindow(Gtk.ApplicationWindow):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, application):
+        super().__init__(application=application)
         # Import the window from glade
         self.builder = Gtk.Builder()
         GObject.type_register(GtkSource.View)
@@ -42,7 +42,7 @@ class UltramarineSettingsWindow(Gtk.ApplicationWindow):
         self.window = self.builder.get_object("main_window")
         self.window.connect("destroy", Gtk.main_quit)
         self.loadRepoList()
-        self.window.present()
+        
 
     def loadRepoList(self=None,widget=None,data=None):
         # get the treeview repo_list
