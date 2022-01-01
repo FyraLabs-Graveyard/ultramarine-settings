@@ -530,7 +530,7 @@ Author: Cappy Ishihara
       </row>
     </data>
   </object>
-  <template class="main_window" parent="GtkApplicationWindow">
+  <object class="GtkApplicationWindow" id="main_window">
     <property name="can-focus">False</property>
     <property name="default-width">1000</property>
     <property name="default-height">500</property>
@@ -995,15 +995,13 @@ Author: Cappy Ishihara
             <child>
               <object class="GtkButton" id="about_button">
                 <property name="label">gtk-about</property>
-                <property name="use-action-appearance">False</property>
-                <property name="related-action">action1</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
                 <property name="action-name">action1</property>
                 <property name="use-stock">True</property>
                 <property name="always-show-image">True</property>
-                <signal name="clicked" handler="about_page" swapped="no"/>
+                <signal name="clicked" handler="about_dialog" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1032,7 +1030,7 @@ Author: Cappy Ishihara
         <property name="show-close-button">True</property>
       </object>
     </child>
-  </template>
+  </object>
   <object class="GtkAssistant" id="RepoWizard">
     <property name="name">repoWizard</property>
     <property name="can-focus">False</property>
