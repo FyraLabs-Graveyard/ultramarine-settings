@@ -1,0 +1,7 @@
+data/org.ultramarine.settings.desktop.in
+data/org.ultramarine.settings.appdata.xml.in
+data/org.ultramarine.settings.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ultramarine-settings
+Exec=ultramarine-settings
+Icon=org.ultramarine.settings
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
