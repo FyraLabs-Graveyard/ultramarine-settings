@@ -1,0 +1,11 @@
+{
+	"tasks": [
+		{
+			"type": "meson",
+			"mode": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "Meson: Build all targets"
+		}
+	]
+}

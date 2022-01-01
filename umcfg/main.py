@@ -40,7 +40,7 @@ class Application(Gtk.Application):
     def __init__(self):
         super().__init__(application_id='org.ultramarine.settings',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
-        GLib.set_application_name(_("Ultramarine Settings"))
+        GLib.set_application_name(("Ultramarine Settings"))
         GLib.set_prgname("org.ultramarine.settings")
 
     def do_activate(self):
